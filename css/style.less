@@ -423,9 +423,14 @@ main h2 {
 }
 
 @keyframes fade {
-  from{opacity: .4}
-  to{opacity: 1}
+  from {
+    opacity: .4
+  }
+  to {
+    opacity: 1
+  }
 }
+
 ///Registration
 .main-header__registration {
   background: #5776D4;
@@ -465,9 +470,79 @@ input {
   border: none;
   outline: none;
 }
+
 ///
+.section {
+  padding-top: 10px;
+}
+
+.menu-btn {
+  display: block;
+  position: relative;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+
+  background: #ffffff;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+.menu-btn span,
+.menu-btn span::before,
+.menu-btn span::after {
+  position: absolute;
+  top: 50%;
+  margin-top: -1px;
+  left: 50%;
+  margin-left: -10px;
+  width: 20px;
+  height: 2px;
+
+  background: #222;
+}
+
+.menu-btn span::before,
+.menu-btn span::after {
+  content: '';
+  display: block;
+  transition: 0.2s;
+}
+
+.menu-btn span::before {
+  transform: translateY(-5px);
+}
+
+.menu-btn span::after {
+  transform: translateY(5px);
+}
+
+.menu-btn__active span {
+  height: 0;
+}
+
+.menu-btn__active span::before {
+  transform: rotate(45deg);
+}
+
+.menu-btn__active span::after {
+  transform: rotate(-45deg);
+}
+
+.main-header__navigation--mobile {
+  display: none;
+}
+
+.main-header__navigation--mobile-active {
+  display: block;
+}
 
 @media (min-width: 768px) {
+  .menu-btn {
+    display: none;
+  }
+
   .two-col-1 {
     background: none;
   }
@@ -497,6 +572,7 @@ input {
   .main-header__menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding-top: 25px;
   }
 
@@ -745,6 +821,7 @@ input {
     background-attachment: fixed;
     background-size: cover;
   }
+
   ///Contact
   .main-header__contact {
     background: #D47960;
@@ -753,6 +830,7 @@ input {
   .map {
     height: 800px;
   }
+
   ///Deli
   .main-header__deli {
     background: #839C3C;
@@ -1052,6 +1130,7 @@ input {
     background-attachment: fixed;
     background-size: cover;
   }
+
   ///Contact
   .main-header__contact {
     background: #D47960;
@@ -1060,6 +1139,7 @@ input {
   .map {
     height: 800px;
   }
+
   ///Deli
   .main-header__deli {
     background: #839C3C;
@@ -1150,14 +1230,18 @@ input {
   }
 
   @keyframes fade {
-    from{opacity: .4}
-    to{opacity: 1}
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
   }
 
   .slider-container {
-     position: relative;
-     margin: auto;
-   }
+    position: relative;
+    margin: auto;
+  }
 
   .mySlides {
     display: none;
@@ -1239,8 +1323,12 @@ input {
   }
 
   @keyframes fade {
-    from{opacity: .4}
-    to{opacity: 1}
+    from {
+      opacity: .4
+    }
+    to {
+      opacity: 1
+    }
   }
 
 
@@ -1251,7 +1339,7 @@ input {
 
   .text {
     margin: 0 auto;
-    width:  500px;
+    width: 500px;
   }
 
   .form {
@@ -1283,5 +1371,8 @@ input {
     outline: none;
   }
 
+ .menu-btn {
+   display: none;
+ }
   ///
 }
