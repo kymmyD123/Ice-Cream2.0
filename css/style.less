@@ -42,7 +42,7 @@ a {
 }
 
 .main-header__navigation--list-item-mobile,
-.main-header__navigation--list-item-mobile a{
+.main-header__navigation--list-item-mobile a {
   font-size: 18px;
   color: #000000;
   text-transform: uppercase;
@@ -127,6 +127,28 @@ a {
 }
 
 .col-text p {
+  font-size: 16px;
+}
+
+.text {
+  padding: 50px 100px;
+
+  text-align: center;
+}
+
+.text h2 {
+  font-size: 28px;
+  text-transform: uppercase;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.text span {
+  font-family: "Marck Script", cursive;
+  font-size: 24px;
+}
+
+.text p {
   font-size: 16px;
 }
 
@@ -260,6 +282,7 @@ main h2 {
 
   text-align: center;
 }
+
 ///События
 .main-header__event {
   background: #FFBFB3;
@@ -288,6 +311,159 @@ main h2 {
   background: url("../img/bg4.jpg") bottom center no-repeat;
   background-attachment: fixed;
   background-size: cover;
+}
+
+///About us
+.main-header__about {
+  background: #C3A9D4;
+}
+
+.fixed-about {
+  background: url("../img/bg3.jpg") bottom center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+///Contact
+.main-header__contact {
+  background: #D47960;
+}
+
+.map {
+  height: 800px;
+}
+
+///Deli
+.main-header__deli {
+  background: #839C3C;
+}
+
+.slider-container {
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+
+  border-radius: 0 3px 3px 0;
+
+  cursor: pointer;
+}
+
+.next {
+  right: 0;
+
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.slide-text {
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+
+  text-align: center;
+
+  color: #f2f2f2;
+  font-size: 12px;
+}
+
+.numbertext {
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+
+  color: #f2f2f2;
+  font-size: 12px;
+}
+
+.dot {
+  margin: 0 2px;
+  height: 13px;
+  width: 13px;
+  display: inline-block;
+
+  background-color: #bbb;
+  border-radius: 50%;
+  transition: background-color 0.6s ease;
+
+  cursor: pointer;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+.dot-container {
+  width: 100%;
+  position: absolute;
+  bottom: 13px;
+}
+
+@keyframes fade {
+  from{opacity: .4}
+  to{opacity: 1}
+}
+///Registration
+.main-header__registration {
+  background: #5776D4;
+}
+
+.fixed-registration {
+  background: url("../img/bg7.jpg") center no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.form {
+  max-width: 300px;
+  margin: 20px auto 0 auto;
+  padding-bottom: 50px;
+}
+
+input {
+  outline: none;
+  border: none;
+}
+
+.form input {
+  display: block;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  font-size: 20px;
+}
+
+.form-btn {
+  background: #5776D4;
+  color: white;
+  cursor: pointer;
+  border: none;
+  outline: none;
 }
 ///
 
@@ -334,10 +510,10 @@ main h2 {
   }
 
   .main-header__menu a {
-      font-size: 18px;
-      color: #000000;
-      text-transform: uppercase;
-      transition: all 0.3s;
+    font-size: 18px;
+    color: #000000;
+    text-transform: uppercase;
+    transition: all 0.3s;
   }
 
   .main-header__banner {
@@ -530,8 +706,8 @@ main h2 {
 
     text-align: center;
   }
-  ///EVENT
 
+  ///EVENT
   .main-header__event {
     background: #FFBFB3;
   }
@@ -559,6 +735,64 @@ main h2 {
     background-size: cover;
   }
 
+  ///About us
+  .main-header__about {
+    background: #C3A9D4;
+  }
+
+  .fixed-about {
+    background: url("../img/bg3.jpg") bottom center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  ///Contact
+  .main-header__contact {
+    background: #D47960;
+  }
+
+  .map {
+    height: 800px;
+  }
+  ///Deli
+  .main-header__deli {
+    background: #839C3C;
+  }
+
+  ///Registration
+  .main-header__registration {
+    background: #5776D4;
+  }
+
+  .form {
+    max-width: 500px;
+    margin: 20px auto 0 auto;
+    padding-bottom: 50px;
+  }
+
+  input {
+    outline: none;
+    border: none;
+  }
+
+  .form input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+  }
+
+  .form-btn {
+    background: #5776D4;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  ///
 }
 
 @media (min-width: 1200px) {
@@ -753,14 +987,13 @@ main h2 {
   }
 
 
-
   ///КАТАЛОГ
   .main-header__catalog {
     background: #B5E8D5;
   }
 
   .top-text__banner {
-  padding-top: 100px;
+    padding-top: 100px;
   }
 
   main h2 {
@@ -780,8 +1013,8 @@ main h2 {
 
     text-align: center;
   }
-  ///События
 
+  ///События
   .main-header__event {
     background: #FFBFB3;
   }
@@ -808,6 +1041,247 @@ main h2 {
     background-attachment: fixed;
     background-size: cover;
   }
-///
 
+  ///About us
+  .main-header__about {
+    background: #C3A9D4;
+  }
+
+  .fixed-about {
+    background: url("../img/bg3.jpg") bottom center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+  }
+  ///Contact
+  .main-header__contact {
+    background: #D47960;
+  }
+
+  .map {
+    height: 800px;
+  }
+  ///Deli
+  .main-header__deli {
+    background: #839C3C;
+  }
+
+  .slider-container {
+    position: relative;
+    margin: auto;
+  }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+
+    border-radius: 0 3px 3px 0;
+
+    cursor: pointer;
+  }
+
+  .next {
+    right: 0;
+
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .slide-text {
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+
+    text-align: center;
+
+    color: #f2f2f2;
+    font-size: 12px;
+  }
+
+  .numbertext {
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+    color: #f2f2f2;
+    font-size: 12px;
+  }
+
+  .dot {
+    margin: 0 2px;
+    height: 13px;
+    width: 13px;
+    display: inline-block;
+
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+
+    cursor: pointer;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .dot-container {
+    width: 100%;
+    position: absolute;
+    bottom: 13px;
+  }
+
+  @keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+  }
+
+  .slider-container {
+     position: relative;
+     margin: auto;
+   }
+
+  .mySlides {
+    display: none;
+  }
+
+  .prev, .next {
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+
+    border-radius: 0 3px 3px 0;
+
+    cursor: pointer;
+  }
+
+  .next {
+    right: 0;
+
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+
+  .slide-text {
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+
+    text-align: center;
+
+    color: #f2f2f2;
+    font-size: 12px;
+  }
+
+  .numbertext {
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+
+    color: #f2f2f2;
+    font-size: 12px;
+  }
+
+  .dot {
+    margin: 0 2px;
+    height: 13px;
+    width: 13px;
+    display: inline-block;
+
+    background-color: #bbb;
+    border-radius: 50%;
+    transition: background-color 0.6s ease;
+
+    cursor: pointer;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  .dot-container {
+    width: 100%;
+    position: absolute;
+    bottom: 13px;
+  }
+
+  @keyframes fade {
+    from{opacity: .4}
+    to{opacity: 1}
+  }
+
+
+  ///Registration
+  .main-header__registration {
+    background: #5776D4;
+  }
+
+  .text {
+    margin: 0 auto;
+    width:  500px;
+  }
+
+  .form {
+    max-width: 800px;
+    margin: 20px auto 0 auto;
+    padding-bottom: 50px;
+  }
+
+  input {
+    outline: none;
+    border: none;
+  }
+
+  .form input {
+    display: block;
+    width: 100%;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 20px;
+  }
+
+  .form-btn {
+    background: #5776D4;
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  ///
 }

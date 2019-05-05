@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>События</title>
+    <title>Регистрация</title>
     <link rel="shortcut icon" href="img/fav.png" type="image/png">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,300italic,700|Marck+Script&subset=latin,cyrillic'
           rel='stylesheet' type='text/css'>
@@ -24,7 +24,7 @@
         </li>
 
         <li class="main-header__navigation--list-item-mobile">
-            <a>События</a>
+            <a href="event.html">События</a>
         </li>
 
         <li class="main-header__navigation--list-item-mobile">
@@ -40,13 +40,15 @@
         </li>
 
         <li class="main-header__navigation--list-item-mobile">
-            <a href="registration.html">Регистрация</a>
+            <a>Регистрация</a>
         </li>
     </ul>
 </nav>
 
-<header class="main-header__event">
+<header class="main-header main-header__registration">
+
     <div class="container">
+
         <div class="main-header__menu">
             <nav class="main-header__navigation">
                 <ul class="main-header__navigation--list">
@@ -60,7 +62,7 @@
                     </li>
 
                     <li class="main-header__navigation--list-item">
-                        <a>События</a>
+                        <a href="event.html">События</a>
                     </li>
 
                     <li class="main-header__navigation--list-item">
@@ -77,41 +79,37 @@
 
                 </ul>
             </nav>
-            <a href="registration.html">Регистрация</a>
+            <a>Регистрация</a>
         </div>
 
         <div class="main-header__banner top">
             <div class="top-text top-text__banner">
-                <span>Отмечайте с нами</span>
-                <h5>События</h5>
+                <span>Зарегистрировался</span>
+                <h5>Получи скидку!</h5>
             </div>
         </div>
     </div>
 </header>
 
-<main class="main-event">
-    <div class="col-text-event container">
+<main>
+    <div class="container">
         <div class="text">
-            <h2>Лучшее мороженое</h2>
-            <span>Для лучшей вечеринки!</span>
-            <p>Мы предлагаем вам услугу быстрой доставки мороженого вам на дом! Если у вас веречеринка в честь дня
-                рождения
-                мороженое будет бесплатным!</p>
-            <p>Мы каждый год проводим праздники в нашем кафе, каждый год 22 января мы раздаем вам бесплатно самое
-                вкусное
-                мороженое!</p>
-            <a href="#" class="popup-btn button">
-                Заказать
-            </a>
+            <h2>Регистрация</h2>
+            <span>Вы тоже обожаете мороженое?!</span>
+            <p>Зарегистрируйся и получи начальную скидку 20%. С каждым заказом скидка будет увеличиваться!</p>
         </div>
+            <form class="form">
+                <input name="name" type="text" placeholder="Имя">
+                <input type="email" name="email" placeholder="Email">
+                <input type="password" name="password" placeholder="Пароль">
+                <input class="form-btn" type="submit" name="submit" value="Отправить">
+            </form>
     </div>
-    <div class="fixed fixed-event"></div>
+    <div class="fixed fixed-registration"></div>
 </main>
 
 <footer class="main-footer">
-    <div class="container">
-        &copy 2019 «Oladka-Corporation». Done with <i class="heart"></i>
-    </div>
+    &copy 2019 «Oladka-Corporation». Done with <i class="heart"></i>
 </footer>
 
 <script src="js/less.js"></script>
